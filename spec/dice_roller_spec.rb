@@ -47,4 +47,12 @@ describe DiceRoller do
     expect(actual).to eq(expected)
   end
 
+  it 'assumes rolling only 1 dice if not specified' do
+    dice = DiceRoller.new
+    roll = dice.roll
+    actual = roll.size
+    expected = 1
+    expect(actual).to eq(expected)
+  end
+
 end
