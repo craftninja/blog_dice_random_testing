@@ -1,7 +1,25 @@
 # README
 
-## DiceRoller
+# Testing Randomness
 
-This is the project from [the blog post at Emily Platzer Makes Things](http://emily-platzer-makes-things.herokuapp.com/2014/04/20/basic-ruby-rspec.html). It is a basic dice roller, you can specify the number of sides on the dice and the number of dice to be rolled at the same time. Sides default to 6, number of dice to roll defaults to 1.
+This is the project from [the blog post at Emily Platzer Makes Things](http://www.emilyplatzer.io/2014/07/14/random-testing.html) featured on July 14th, 2014.
 
-## Fork it! Clone it! Run it! Change it!
+# get this project rolling
+
+* fork it
+* clone it
+* bundle it
+* run it in the terminal
+* bask in the awesome
+
+# run it in the terminal
+
+CD into project directory and run the following in the command line:
+
+    $ irb
+    > require_relative 'lib/game_turn.rb'
+    > game=GameTurn.new
+    > game.roll(6)
+
+# Fork it! Clone it! Run it! Change it!
+
