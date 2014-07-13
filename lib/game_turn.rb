@@ -11,7 +11,7 @@ class GameTurn
 
   def roll(num_dice)
     rolled = @dice.roll(num_dice).sort
-    points = rolled.count(1) * 100
+    points = rolled.count(1) * 100 + rolled.count(5) * 50
     "You rolled #{rolled} for #{points} points."
   end
 

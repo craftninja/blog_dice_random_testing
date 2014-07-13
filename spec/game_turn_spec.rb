@@ -18,10 +18,19 @@ describe GameTurn do
     srand(Random.new_seed)
   end
 
+  it 'allows user to roll dice and score them for the 1s and 5s' do
+    srand(121)
+    game_turn = GameTurn.new
+    actual = game_turn.roll(6)
+    expected = "You rolled [1, 2, 3, 5, 5, 6] for 200 points."
+    expect(actual).to eq(expected)
+    srand(Random.new_seed)
+  end
+
   # it 'finds a certain roll' do
   #   actual_roll = ""
   #   i = 0
-  #   while actual_roll != "You rolled [1, 2, 3, 4, 4, 6] for 100 points."
+  #   while actual_roll != "You rolled [1, 2, 3, 5, 5, 6] for 200 points."
   #     srand(i)
   #     game_turn = GameTurn.new
   #     actual_roll = game_turn.roll(6)
